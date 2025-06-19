@@ -2,10 +2,9 @@
 version: 2
 
 models:
-    - name: source_customer
+    - name: source_customer_model
       description: "A sample database provided by Snowflake"
       database: SNOWFLAKE_SAMPLE_DATA
       schema: TPCDS_SF100TCL
       tables:
         - name: customer
-          description: "The primary key for this table"
