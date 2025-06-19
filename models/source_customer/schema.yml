@@ -2,7 +2,7 @@
 version: 2
 
 models:
-    - name: source_customer_model
+    - name: source_customer
       description: "A sample database provided by Snowflake"
       database: SNOWFLAKE_SAMPLE_DATA
       schema: TPCDS_SF100TCL
