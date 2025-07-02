@@ -19,3 +19,19 @@ models:
             tests:
                 - unique
                 - not_null
+
+    - name: source_customer_dbt_model
+      description: "snowflake source"
+      database: SNOWFLAKE_SAMPLE_DATA
+      schema: TPCDS_SF100TCL
+      tables:
+          - name: CUSTOMER 
+            description: "The primary key for this table"    
+            
+sources:
+  - name: source_customer_dbt_model
+    schema: TPCDS_SF100TCL
+    database: SNOWFLAKE_SAMPLE_DATA
+
+    tables:
+      - name: CUSTOMER                   
